@@ -1,7 +1,9 @@
 version: '3.5'
 services:
   db-client:
-    image: centos:7
+    image: db-client-base:latest
+    depends_on:
+      - db-server
   db-server:
     image: mysql:5.7
     ports:
