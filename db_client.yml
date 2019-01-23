@@ -1,0 +1,4 @@
+---
+- hosts: db_client
+  roles:
+    - mysql_client
