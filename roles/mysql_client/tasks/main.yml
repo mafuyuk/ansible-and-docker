@@ -1,3 +1,5 @@
 ---
-- name: install the mysql client
-  yum: name=https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm
+- name: install mysql client
+  yum:
+    name: https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm
+    state: present
