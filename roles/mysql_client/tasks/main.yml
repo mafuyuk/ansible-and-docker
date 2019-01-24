@@ -5,4 +5,5 @@
     state: present
 
 - name: install mysql client
-  yum: mysql-community-client
+  yum:
+    name: mysql-community-client
